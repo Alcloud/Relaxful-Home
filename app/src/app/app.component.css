@@ -1,0 +1,9 @@
+.main-screen{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+.main-screen > * {
+    box-sizing: border-box;
+}

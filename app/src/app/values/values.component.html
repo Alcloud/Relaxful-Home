@@ -1,0 +1,23 @@
+<div class="phq9-values">
+  <mat-card class="phq9-values" fxFlex="100%;" style="text-align: left;">
+    <mat-card-header>
+        <div mat-card-avatar class="phq9-header-image"></div>
+        <mat-card-title >PHQ-9 Fragebogen</mat-card-title>
+        <mat-card-subtitle>Zusammenfassung</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
+<div class="phq9-values">
+  <button class="phq9-values asd cardPardding" mat-raised-button (click)="showValues()" style="text-align:center">Refresh values</button>
+</div>
+<div class="phq9-list-values">
+    <li *ngFor="let element of resultArray">
+        <mat-card class="phq9-list-values asd cardPardding" fxFlex="25%;" fxFlex.xs="100%">
+            <mat-card-header>
+                <div mat-card-avatar class="phq9-card-image"></div>
+                <mat-card-title >{{element[1]}}</mat-card-title>
+                <mat-card-subtitle>{{element[0]}}</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+    </li>
+</div>

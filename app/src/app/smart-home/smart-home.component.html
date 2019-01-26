@@ -1,0 +1,88 @@
+<div class="smart-home-header">
+    <mat-card class="smart-home-header asd cardPardding" fxFlex="100%;" style="text-align: left;">
+        <mat-card-header>
+            <div mat-card-avatar class="smarthome-header-image"></div>
+            <mat-card-title >Schlafzimmer</mat-card-title>
+            <mat-card-subtitle>Werte</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</div>
+<div fxLayout="row" fxLayout.xs="column">
+  <mat-card class="smart-home asd cardPardding" fxFlex="100%;" fxFlex.xs="100%">
+    <mat-card-header>
+        <div mat-card-avatar class="temp-header-image"></div>
+        <mat-card-title >{{temperature}}</mat-card-title>
+        <mat-card-subtitle>Temperature</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="temp"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [autoScale]="autoScale"
+        [timeline]="timeline"
+        (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>MONAT</button>
+        <button mat-button>JAHR</button>
+      </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="smart-home asd cardPardding" fxFlex="100%;" fxFlex.xs="100%">
+      <mat-card-header>
+          <div mat-card-avatar class="hum-header-image"></div>
+          <mat-card-title >{{humidity}}%</mat-card-title>
+          <mat-card-subtitle>Luftfeuchtigkeit</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+          <ngx-charts-line-chart
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="hum"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          [autoScale]="autoScale"
+          [timeline]="timeline"
+          (select)="onSelect($event)">
+          </ngx-charts-line-chart>
+      </mat-card-content>
+      <mat-card-actions>
+          <button mat-button>MONAT</button>
+          <button mat-button>JAHR</button>
+        </mat-card-actions>
+  </mat-card>
+
+</div>
+
+<div fxLayout="row" fxLayout.xs="column">
+    <mat-card class="smart-home asd cardPardding" fxFlex="50%;" fxFlex.xs="80%">
+        <mat-card-header>
+            <div mat-card-avatar class="bright-header-image"></div>
+            <mat-card-title >{{brightness}}</mat-card-title>
+            <mat-card-subtitle>Helligkeit</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+  
+    <mat-card class="smart-home asd cardPardding" fxFlex="50%;" fxFlex.xs="80%">
+        <mat-card-header>
+            <div mat-card-avatar class="air-header-image"></div>
+            <mat-card-title >{{air_quality}}</mat-card-title>
+            <mat-card-subtitle>Luft Qualität</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+  
+  </div>

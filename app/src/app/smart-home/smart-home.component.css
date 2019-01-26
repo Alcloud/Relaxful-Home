@@ -1,0 +1,48 @@
+.smart-home{
+  margin: 5px;
+}
+
+.smart-home > * {
+  box-sizing: border-box;
+}
+
+.smart-home-header{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.smart-home-header > * {
+  box-sizing: border-box;
+}
+
+.temp-header-image {
+  background-image: url('../../assets/images/temp.png');
+  background-size: cover;
+}
+
+.hum-header-image {
+  background-image: url('../../assets/images/hum.png');
+  background-size: cover;
+}
+
+.loudness-header-image {
+  background-image: url('../../assets/images/loudness.png');
+  background-size: cover;
+}
+
+.air-header-image {
+  background-image: url('../../assets/images/air.jpg');
+  background-size: cover;
+}
+
+.bright-header-image {
+  background-image: url('../../assets/images/bright.png');
+  background-size: cover;
+}
+
+.smarthome-header-image {
+  background-image: url('../../assets/images/smarthome.png');
+  background-size: cover;
+}

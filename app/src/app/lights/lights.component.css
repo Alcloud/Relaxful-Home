@@ -1,0 +1,30 @@
+.lights{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.lights-cards{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.lights > * {
+    box-sizing: border-box;
+}
+.lights-cards > * {
+    box-sizing: border-box;
+}
+.ip-header-image {
+    background-image: url('../../assets/images/ip.png');
+    background-size: cover;
+}
+.bulb-header-image {
+    background-image: url('../../assets/images/bulb.png');
+    background-size: cover;
+}
+.light-header-image {
+    background-image: url('../../assets/images/light.png');
+    background-size: cover;
+}

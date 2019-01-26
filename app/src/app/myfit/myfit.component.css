@@ -1,0 +1,29 @@
+.my-fit {
+    margin: 5px;
+}
+
+.my-fit > * {
+    box-sizing: border-box;
+}
+
+.my-fit-header {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.my-fit-header-image {
+    background-image: url('../../assets/images/fit.png');
+    background-size: cover;
+}
+
+.steps-header-image {
+  background-image: url('../../assets/images/steps.png');
+  background-size: cover;
+}
+
+.sleep-header-image {
+  background-image: url('../../assets/images/sleep.png');
+  background-size: cover;
+}

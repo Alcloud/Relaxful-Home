@@ -1,0 +1,26 @@
+.phq9-values{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.phq9-list-values{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.phq9-values > * {
+    box-sizing: border-box;
+}
+.phq9-list-values > * {
+    box-sizing: border-box;
+}
+.phq9-header-image {
+    background-image: url('../../assets/images/phq9.png');
+    background-size: cover;
+}
+.phq9-card-image {
+    background-image: url('../../assets/images/phq9.jpg');
+    background-size: cover;
+}

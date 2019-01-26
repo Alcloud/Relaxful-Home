@@ -1,0 +1,45 @@
+<div class="lights">
+    <mat-card class="lights asd cardPardding" fxFlex="100%;" style="text-align: left;">
+    <mat-card-header>
+        <div mat-card-avatar class="light-header-image"></div>
+        <mat-card-title>Einstellungen</mat-card-title>
+        <mat-card-subtitle>Für das Bridge</mat-card-subtitle>
+    </mat-card-header>
+    </mat-card>
+</div>
+<div class="lights">
+    <button class="lights asd cardPardding" mat-raised-button (click)="discoverBridges()" style="text-align:center">Discover Bridge</button>
+</div>
+<div class="lights-cards">
+  <li *ngFor="let ip of bridgeIPs">
+      <mat-card class="lights-cards asd cardPardding" fxFlex="25%;" fxFlex.xs="100%">
+          <mat-card-header>
+              <div mat-card-avatar class="ip-header-image"></div>
+              <mat-card-title >{{ip}}</mat-card-title>
+              <mat-card-subtitle>IP Adresse</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+              <p>Please push the connection button of your bridge and then press the "Use bridge" button.<p>
+          </mat-card-content>
+          <mat-card-actions>
+              <button mat-button (click)="initUser(ip)">USE BRIDGE</button>
+          </mat-card-actions>
+      </mat-card>
+  </li>
+</div>
+<div class="lights-cards" *ngIf="this.user != undefined">
+    <mat-card class="lights-cards asd cardPardding">
+        <mat-card-header>
+            <div mat-card-avatar class="bulb-header-image"></div>
+            <mat-card-title>{{user}}</mat-card-title>
+            <mat-card-subtitle>User</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p> Change the settings for light 1 </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="lightOn()">LIGHT ON</button>
+            <button mat-button (click)="lightOff()">LIGHT OFF</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
