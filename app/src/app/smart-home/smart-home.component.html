@@ -7,8 +7,25 @@
         </mat-card-header>
     </mat-card>
 </div>
-<div fxLayout="row" fxLayout.xs="column">
-  <mat-card class="smart-home asd cardPardding" fxFlex="100%;" fxFlex.xs="100%">
+<div class="smart-home-set-temperature" >
+    <mat-card class="smart-home-set-temperature asd cardPardding" fxFlex="100%;" style="text-align: left;">
+        <mat-card-header>
+            <div mat-card-avatar class="smarthome-set-temperature-image"></div>
+            <mat-card-title >Set Temperature</mat-card-title>
+            <mat-card-subtitle>Schlafzimmer</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-slider
+            thumbLabel
+            [displayWith]="formatLabel"
+            tickInterval="100"
+            min="10"
+            max="30"></mat-slider>          
+        </mat-card-content>
+    </mat-card>
+</div>
+<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+  <mat-card class="smart-home asd cardPardding">
     <mat-card-header>
         <div mat-card-avatar class="temp-header-image"></div>
         <mat-card-title >{{temperature}}</mat-card-title>
@@ -37,7 +54,7 @@
       </mat-card-actions>
   </mat-card>
 
-  <mat-card class="smart-home asd cardPardding" fxFlex="100%;" fxFlex.xs="100%">
+  <mat-card class="smart-home asd cardPardding">
       <mat-card-header>
           <div mat-card-avatar class="hum-header-image"></div>
           <mat-card-title >{{humidity}}%</mat-card-title>

@@ -1,0 +1,29 @@
+.tasks{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.tasks-list{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.tasks > * {
+    box-sizing: border-box;
+}
+.tasks-list > * {
+    box-sizing: border-box;
+}
+.tasks-image {
+    background-image: url('../../assets/images/task.jpg');
+    background-size: cover;
+}
+.task-card-image {
+    background-image: url('../../assets/images/task-card.png');
+    background-size: cover;
+}
+.hinweiss{
+    font-size: 12px;
+}

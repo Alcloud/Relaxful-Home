@@ -23,12 +23,13 @@ export class AppComponent implements OnInit {
   checkSmartHomeValues() {
     this.router.navigate(['/smarthome']);
   }
-
+  getTasks() {
+    this.router.navigate(['/tasks']);
+  }
   /**
    * add a route to the google fit page
    */
   checkFit() {
     this.router.navigate(['/myfit']);
   }
-
 }

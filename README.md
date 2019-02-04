@@ -1,6 +1,3 @@
-## Relaxful Home Project
-Relaxful Home ist ein System, welches mittels Smart-Home Einrichtung diverse Aufgaben verteilt und Sie motiviert Ihr Leben grundlegend zu ändern. Hardware vom Umtausch ausgeschlossen.
-
 ## Getting started
 ### Basic requirements
 git, node.js, npm, etc...

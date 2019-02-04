@@ -1,0 +1,59 @@
+<div class="tasks">
+  <mat-card class="tasks" fxFlex="100%;" style="text-align: left;">
+    <mat-card-header>
+        <div mat-card-avatar class="tasks-image"></div>
+        <mat-card-title >Tägliche Aufgaben</mat-card-title>
+        <mat-card-subtitle>Wählen Sie eine oder mehrere Aufgaben</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
+<div class="tasks">
+  <button class="tasks asd cardPardding" mat-raised-button (click)="showTasks()" style="text-align:center">Neue Aufgaben</button>
+</div>
+<div class="tasks-list">
+        <mat-card class="tasks-list asd cardPardding" fxFlex="25%;" fxFlex.xs="100%">
+            <mat-card-header>
+                <div mat-card-avatar class="task-card-image"></div>
+                <mat-card-title >Zusammen ins Kino gehen</mat-card-title>	
+                <mat-card-subtitle>5 Punkte</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              Verabreden Sie sich mit einem Bekannten, um zusammen ins Kino zu gehen.
+            </mat-card-content>
+            <mat-card-actions>
+                <mat-slide-toggle [(ngModel)]="disabled1">ERLEDIGT</mat-slide-toggle>
+                <button mat-raised-button color="primary" [disabled]="!disabled1">BELOHNUNG EINLÖSEN</button>
+                <div class="hinweiss">Für diese Belohnung solltest du zuhause sein</div>
+              </mat-card-actions>
+        </mat-card>
+        <mat-card class="tasks-list asd cardPardding" fxFlex="25%;" fxFlex.xs="100%">
+            <mat-card-header>
+                <div mat-card-avatar class="task-card-image"></div>
+                <mat-card-title >Fahrradtour</mat-card-title>
+                <mat-card-subtitle>7 Punkte</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              Fahren Sie eine Strecke von mindestens 5km mit dem Fahrrad. Ihren aktuellen Fortschritt können Sie mithilfe Ihres Armbands kontrollieren.
+            </mat-card-content>
+            <mat-card-actions>
+              <mat-slide-toggle [(ngModel)]="disabled2">ERLEDIGT</mat-slide-toggle>
+              <button mat-raised-button color="primary" [disabled]="!disabled2">BELOHNUNG EINLÖSEN</button>
+              <div class="hinweiss">Für diese Belohnung solltest du zuhause sein</div>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="tasks-list asd cardPardding" fxFlex="25%;" fxFlex.xs="100%">
+            <mat-card-header>
+                <div mat-card-avatar class="task-card-image"></div>
+                <mat-card-title >Neue Leute kennenlernen</mat-card-title>
+                <mat-card-subtitle>12 Punkte</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              Erweitern Sie ihren Bekanntenkreis und lernen Sie mindestens eine neue Person kennen.               
+            </mat-card-content>
+            <mat-card-actions>
+              <mat-slide-toggle [(ngModel)]="disabled3">ERLEDIGT</mat-slide-toggle>
+              <button mat-raised-button color="primary" [disabled]="!disabled3">BELOHNUNG EINLÖSEN</button>
+              <div class="hinweiss">Für diese Belohnung solltest du zuhause sein</div>
+            </mat-card-actions>
+        </mat-card>
+</div>
